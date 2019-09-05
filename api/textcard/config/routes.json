@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/textcards",
+      "handler": "Textcard.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/textcards/count",
+      "handler": "Textcard.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/textcards/:id",
+      "handler": "Textcard.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/textcards",
+      "handler": "Textcard.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/textcards/:id",
+      "handler": "Textcard.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/textcards/:id",
+      "handler": "Textcard.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

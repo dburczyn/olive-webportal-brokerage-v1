@@ -1,0 +1,41 @@
+{
+  "connection": "default",
+  "collectionName": "filemenus",
+  "info": {
+    "name": "filemenu",
+    "description": "This is menu item allowing you to add files for download"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "files": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "name": {
+      "unique": true,
+      "default": "New file",
+      "required": true,
+      "type": "string"
+    },
+    "visible": {
+      "type": "boolean",
+      "default": true
+    },
+    "projects": {
+      "collection": "project",
+      "dominant": true,
+      "via": "filemenus"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "connection": "default",
+  "collectionName": "grids",
+  "info": {
+    "name": "grid",
+    "description": "This is grid component"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "New Grid",
+      "required": true,
+      "unique": true,
+      "type": "string"
+    },
+    "type": {
+      "default": "Project",
+      "enum": [
+        "Project",
+        "Job",
+        "Training",
+        "Event"
+      ],
+      "required": true,
+      "type": "enumeration"
+    },
+    "visible": {
+      "default": true,
+      "type": "boolean"
+    },
+    "gridurls": {
+      "collection": "gridurls",
+      "via": "grids"
+    }
+  }
+}

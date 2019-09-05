@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/gridurls",
+      "handler": "Gridurls.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/gridurls/count",
+      "handler": "Gridurls.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/gridurls/:id",
+      "handler": "Gridurls.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/gridurls",
+      "handler": "Gridurls.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/gridurls/:id",
+      "handler": "Gridurls.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/gridurls/:id",
+      "handler": "Gridurls.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

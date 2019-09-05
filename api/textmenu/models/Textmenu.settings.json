@@ -1,0 +1,38 @@
+{
+  "connection": "default",
+  "collectionName": "textmenus",
+  "info": {
+    "name": "textmenu",
+    "description": "This is content type allowing you to add html text"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "content": {
+      "default": "Default text",
+      "required": true,
+      "type": "text"
+    },
+    "name": {
+      "unique": true,
+      "default": "New text",
+      "required": true,
+      "type": "string"
+    },
+    "visible": {
+      "default": true,
+      "type": "boolean"
+    },
+    "projects": {
+      "collection": "project",
+      "dominant": true,
+      "via": "textmenus"
+    }
+  }
+}

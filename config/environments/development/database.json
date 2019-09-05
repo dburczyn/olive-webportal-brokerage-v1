@@ -1,0 +1,17 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "strapi-hook-bookshelf",
+      "settings": {
+        "client": "postgres",
+        "database": "olive-webportal-brokerage-v1",
+        "host": "127.0.0.1",
+        "port": 5432,
+        "username": "postgres",
+        "password": "postgres"
+      },
+      "options": {}
+    }
+  }
+}

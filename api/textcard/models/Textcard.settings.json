@@ -1,0 +1,32 @@
+{
+  "connection": "default",
+  "collectionName": "textcards",
+  "info": {
+    "name": "textcard",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    },
+    "visible": {
+      "type": "boolean"
+    },
+    "projects": {
+      "collection": "project",
+      "dominant": true,
+      "via": "textcards"
+    }
+  }
+}

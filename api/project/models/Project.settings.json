@@ -1,0 +1,53 @@
+{
+  "connection": "default",
+  "collectionName": "projects",
+  "info": {
+    "name": "project",
+    "description": "This is project content type"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "required": true,
+      "default": "New project",
+      "unique": true,
+      "type": "string"
+    },
+    "picture": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "affiliation": {
+      "type": "string"
+    },
+    "visible": {
+      "default": true,
+      "type": "boolean"
+    },
+    "textmenus": {
+      "collection": "textmenu",
+      "via": "projects"
+    },
+    "filemenus": {
+      "collection": "filemenu",
+      "via": "projects"
+    },
+    "description": {
+      "required": true,
+      "default": "default project description",
+      "type": "text"
+    },
+    "textcards": {
+      "collection": "textcard",
+      "via": "projects"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/filemenus",
+      "handler": "Filemenu.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/filemenus/count",
+      "handler": "Filemenu.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/filemenus/:id",
+      "handler": "Filemenu.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/filemenus",
+      "handler": "Filemenu.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/filemenus/:id",
+      "handler": "Filemenu.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/filemenus/:id",
+      "handler": "Filemenu.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

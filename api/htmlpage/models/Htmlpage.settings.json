@@ -1,0 +1,31 @@
+{
+  "connection": "default",
+  "collectionName": "htmlpages",
+  "info": {
+    "name": "htmlpage",
+    "description": "This is basic html page content type"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "New page",
+      "required": true,
+      "unique": true,
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    },
+    "visible": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

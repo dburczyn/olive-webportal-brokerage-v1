@@ -1,0 +1,38 @@
+{
+  "connection": "default",
+  "collectionName": "gridurls",
+  "info": {
+    "name": "gridurls",
+    "description": "These are endpoints for grid content"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "New Grid Endpoint",
+      "required": true,
+      "unique": true,
+      "type": "string"
+    },
+    "url": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "enable": {
+      "default": true,
+      "type": "boolean"
+    },
+    "grids": {
+      "collection": "grid",
+      "dominant": true,
+      "via": "gridurls"
+    }
+  }
+}

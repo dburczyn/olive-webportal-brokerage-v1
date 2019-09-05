@@ -1,0 +1,39 @@
+{
+  "connection": "default",
+  "collectionName": "jobs",
+  "info": {
+    "name": "job",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "picture": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "type": {
+      "enum": [
+        "Employment",
+        "Training",
+        "Internship",
+        "Master",
+        "PhD"
+      ],
+      "type": "enumeration"
+    },
+    "description": {
+      "type": "text"
+    },
+    "email": {
+      "type": "email"
+    }
+  }
+}
