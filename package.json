@@ -1,9 +1,10 @@
 {
-  "name": "olive-webportal-brokerage-v1",
+  "name": "olive-webportal-v1",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi based application of Olive webportal with included brokrage module",
+  "description": "Olive web portal",
   "scripts": {
+    "production": "cross-env NODE_ENV=production strapi start",
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
@@ -18,6 +19,7 @@
     "eslint-plugin-react": "^7.14.0"
   },
   "dependencies": {
+    "cross-env": "^5.2.1",
     "knex": "latest",
     "lodash": "^4.17.5",
     "pg": "latest",
@@ -31,14 +33,13 @@
     "strapi-plugin-settings-manager": "3.0.0-beta.15",
     "strapi-plugin-upload": "3.0.0-beta.15",
     "strapi-plugin-users-permissions": "3.0.0-beta.15",
-    "strapi-provider-email-nodemailer-notlscheck": "^1.0.0",
     "strapi-utils": "3.0.0-beta.15"
   },
   "author": {
     "name": "dburczyn"
   },
   "strapi": {
-    "uuid": "187d4a45-3c61-478b-8996-25f76b89c663"
+    "uuid": "73662dfb-39f3-41b3-bb96-c554e870e6d4"
   },
   "engines": {
     "node": ">=10.0.0",
