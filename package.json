@@ -33,6 +33,7 @@
     "strapi-plugin-settings-manager": "3.0.0-beta.15",
     "strapi-plugin-upload": "3.0.0-beta.15",
     "strapi-plugin-users-permissions": "3.0.0-beta.15",
+    "strapi-provider-email-nodemailer-notlscheck": "^1.0.0",
     "strapi-utils": "3.0.0-beta.15"
   },
   "author": {
