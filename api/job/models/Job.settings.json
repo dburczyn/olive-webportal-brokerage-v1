@@ -7,7 +7,10 @@
   },
   "options": {
     "increments": true,
-    "timestamps": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
     "comment": ""
   },
   "attributes": {
@@ -27,7 +30,8 @@
         "Master",
         "PhD"
       ],
-      "type": "enumeration"
+      "type": "enumeration",
+      "default": "Employment"
     },
     "description": {
       "type": "text"
