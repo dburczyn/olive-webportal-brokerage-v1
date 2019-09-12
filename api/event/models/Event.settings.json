@@ -7,7 +7,10 @@
   },
   "options": {
     "increments": true,
-    "timestamps": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
     "comment": ""
   },
   "attributes": {
@@ -27,6 +30,10 @@
     },
     "email": {
       "type": "email"
+    },
+    "AlternatePictureUrl": {
+      "default": "https://image.shutterstock.com/image-vector/pupils-study-classroom-interior-school-260nw-1125377942.jpg",
+      "type": "string"
     }
   }
 }

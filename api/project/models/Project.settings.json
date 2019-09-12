@@ -48,6 +48,10 @@
     "textcards": {
       "collection": "textcard",
       "via": "projects"
+    },
+    "AlternatePictureUrl": {
+      "default": "https://image.shutterstock.com/image-vector/pupils-study-classroom-interior-school-260nw-1125377942.jpg",
+      "type": "string"
     }
   }
 }
