@@ -21,12 +21,13 @@
       "type": "text"
     },
     "visible": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": true
     },
     "projects": {
       "collection": "project",
-      "dominant": true,
-      "via": "textcards"
+      "via": "textcards",
+      "dominant": true
     }
   }
 }
