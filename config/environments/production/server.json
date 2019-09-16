@@ -3,10 +3,10 @@
   "port": "${process.env.PORT || 1337}",
   "production": true,
   "proxy": {
-    "enabled": true,
-    "ssl": true,
-    "host": "olive-brokerage-cms.herokuapp.com",
-    "port": 443
+    "enabled": true,                                 // IMPORTANT
+    "ssl": true,                                     // IMPORTANT
+    "host": "olive-brokerage-cms.herokuapp.com",     // IMPORTANT
+    "port": 443                                      // IMPORTANT
   },
   "cron": {
     "enabled": false
