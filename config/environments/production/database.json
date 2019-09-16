@@ -5,12 +5,12 @@
       "connector": "strapi-hook-bookshelf",
       "settings": {
         "client": "postgres",
-        "host": "${process.env.DATABASE_HOST || '127.0.0.1'}",              // IMPORTANT
-        "port": "${process.env.DATABASE_PORT || 5432}",                     // IMPORTANT
+        "host": "${process.env.DATABASE_HOST || '127.0.0.1'}",
+        "port": "${process.env.DATABASE_PORT || 5432}",
         "srv": "${process.env.DATABASE_SRV || false}",
-        "database": "${process.env.DATABASE_NAME || 'olive-webportal-brokerage-v1'}", // IMPORTANT
-        "username": "${process.env.DATABASE_USERNAME || 'postgres'}",                 // IMPORTANT
-        "password": "${process.env.DATABASE_PASSWORD || 'postgres'}"                  // IMPORTANT
+        "database": "${process.env.DATABASE_NAME || 'olive-webportal-brokerage-v1'}",
+        "username": "${process.env.DATABASE_USERNAME || 'postgres'}",
+        "password": "${process.env.DATABASE_PASSWORD || 'postgres'}"
       },
       "options": {
         "ssl": "${process.env.DATABASE_SSL || false}",
