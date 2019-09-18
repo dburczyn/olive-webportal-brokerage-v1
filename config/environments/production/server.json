@@ -5,7 +5,7 @@
   "proxy": {
     "enabled": true,
     "ssl": true,
-    "host": "olive-brokerage-cms.herokuapp.com",
+    "host": "${process.env.PROXY || localhost}" ,
     "port": 443
   },
   "cron": {
