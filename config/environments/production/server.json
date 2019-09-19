@@ -3,9 +3,9 @@
   "port": "${process.env.PORT || 1337}",
   "production": true,
   "proxy": {
-    "enabled": "${process.env.PROXY_ENABLE || false}",
+    "enabled": "${process.env.PROXY_ENABLE || true}",
     "ssl": "${process.env.PROXY_SSL || true}",
-    "host": "${process.env.PROXY_HOST || 'localhost'}" ,
+    "host": "${process.env.PROXY_HOST || 'olive-brokerage-cms.herokuapp.com'}" ,
     "port": "${process.env.PROXY_PORT || 443}"
   },
   "cron": {
