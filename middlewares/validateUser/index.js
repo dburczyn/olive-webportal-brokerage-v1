@@ -1,8 +1,6 @@
 const fetch = require("node-fetch");
 const checkapi = 'https://www.google.com/recaptcha/api/siteverify';
-///////////////////////////////////////////////
-const secret = process.env.SITE_SECRET;      // IMPORTANT
-///////////////////////////////////////////////
+const secret = process.env.SITE_SECRET || '6LfeP7gUAAAAAJ_BFsqOhocbtJpg2qJeOsyReW4x';
 module.exports = strapi => {
   return {
     initialize: function (cb) {
