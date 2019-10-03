@@ -8,7 +8,7 @@
         "host": "${process.env.DATABASE_HOST || '127.0.0.1'}",
         "port": "${process.env.DATABASE_PORT || 5432}",
         "srv": "${process.env.DATABASE_SRV || false}",
-        "database": "${process.env.DATABASE_NAME || 'olive-webportal-brokerage-v1'}",
+        "database": "${process.env.DATABASE_NAME || 'digifof'}",
         "username": "${process.env.DATABASE_USERNAME || 'postgres'}",
         "password": "${process.env.DATABASE_PASSWORD || 'postgres'}"
       },

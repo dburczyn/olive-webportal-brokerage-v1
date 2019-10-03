@@ -1,8 +1,8 @@
 {
-  "name": "olive-webportal-v1",
+  "name": "digifof-webportal-v1",
   "private": true,
   "version": "0.1.0",
-  "description": "Olive web portal",
+  "description": "DigiFoF web portal",
   "scripts": {
     "production": "cross-env NODE_ENV=production strapi start",
     "develop": "strapi develop",
