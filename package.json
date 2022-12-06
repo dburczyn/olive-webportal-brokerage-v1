@@ -23,7 +23,7 @@
     "knex": "latest",
     "lodash": "^4.17.5",
     "pg": "latest",
-    "strapi": "3.0.0-beta.15",
+    "strapi": "3.6.11",
     "strapi-admin": "3.0.0-beta.15",
     "strapi-hook-bookshelf": "3.0.0-beta.15",
     "strapi-hook-knex": "3.0.0-beta.15",
@@ -32,7 +32,7 @@
     "strapi-plugin-email": "3.0.0-beta.15",
     "strapi-plugin-settings-manager": "3.0.0-beta.15",
     "strapi-plugin-upload": "3.0.0-beta.15",
-    "strapi-plugin-users-permissions": "3.0.0-beta.15",
+    "strapi-plugin-users-permissions": "3.6.11",
     "strapi-provider-email-nodemailer-notlscheck": "^1.0.0",
     "strapi-utils": "3.0.0-beta.15"
   },
